@@ -1,6 +1,6 @@
 # Notebook CI – Latest vs Previous Run Comparison
 
-_Generated 2026-05-18 05:22 UTC_
+_Generated 2026-05-18 13:50 UTC_
 
 Workflow name: `Notebook CI - Scheduled`
 
@@ -9,7 +9,7 @@ Workflow name: `Notebook CI - Scheduled`
 | Repository | Latest Run | Previous Run | New Failures | Resolved | Consistent Failures | Latest Fail Count |
 |---|---|---|---:|---:|---:|---:|
 | `spacetelescope/hellouniverse` | [#35](https://github.com/spacetelescope/hellouniverse/actions/runs/24619741210) | [#34](https://github.com/spacetelescope/hellouniverse/actions/runs/24297475556) | 0 | 0 | 0 | 0 |
-| `spacetelescope/mast_notebooks` | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | [#35](https://github.com/spacetelescope/mast_notebooks/actions/runs/25618550437) | 2 | 2 | 1 | 3 |
+| `spacetelescope/mast_notebooks` | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | [#35](https://github.com/spacetelescope/mast_notebooks/actions/runs/25618550437) | 1 | 3 | 0 | 1 |
 | `spacetelescope/jdat_notebooks` | [#28](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25979988260) | [#27](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25618482201) | 0 | 0 | 5 | 5 |
 | `spacetelescope/hst_notebooks` | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | [#29](https://github.com/spacetelescope/hst_notebooks/actions/runs/25618503170) | 2 | 0 | 3 | 5 |
 | `spacetelescope/roman_notebooks` | [#26](https://github.com/spacetelescope/roman_notebooks/actions/runs/25979986635) | [#25](https://github.com/spacetelescope/roman_notebooks/actions/runs/25618477167) | 1 | 1 | 10 | 11 |
@@ -59,28 +59,28 @@ _No consistent failures_ ✅
 
 | | Run | Date | Pass | Fail | Total |
 |---|---|---|---|---|---|
-| **Latest** | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | 2026-05-17 | 76 | 3 | 79 |
+| **Latest** | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | 2026-05-17 | 78 | 1 | 79 |
 | **Previous** | [#35](https://github.com/spacetelescope/mast_notebooks/actions/runs/25618550437) | 2026-05-10 | 76 | 3 | 79 |
 
-- **New failures:** 2
-- **Resolved failures:** 2
-- **Consistent failures:** 1
+- **New failures:** 1
+- **Resolved failures:** 3
+- **Consistent failures:** 0
 
-### 🔴 New Failures (2)
+### 🔴 New Failures (1)
 
-- `notebooks/TESS/interm_tasoc_lc/interm_tasoc_lc.ipynb`
 - `notebooks/multi_mission/beginner_zcut/beginner_zcut.ipynb`
 
-### 🟢 Resolved Failures (2)
+### 🟢 Resolved Failures (3)
 
 - `notebooks/HSC/HSCV3_SMC_API/hscv3_smc_api.ipynb`
 - `notebooks/HSC/SWEEPS_HSCV3P1_API/sweeps_hscv3p1_api.ipynb`
-
-### 🟡 Consistent Failures (1)
-
 - `notebooks/multi_mission/resolve_objects/resolve_objects.ipynb`
 
-### ✅ Consistent Successes (74)
+### 🟡 Consistent Failures (0)
+
+_No consistent failures_ ✅
+
+### ✅ Consistent Successes (75)
 
 <details>
 <summary>Click to expand</summary>
@@ -148,6 +148,7 @@ _No consistent failures_ ✅
 - `notebooks/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.ipynb`
 - `notebooks/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.ipynb`
 - `notebooks/TESS/interm_gi_query/interm_gi_query.ipynb`
+- `notebooks/TESS/interm_tasoc_lc/interm_tasoc_lc.ipynb`
 - `notebooks/TESS/interm_tess_prf_retrieve/interm_tess_prf_retrieve.ipynb`
 - `notebooks/TESS/interm_tesscut_dss_overlay/interm_tesscut_dss_overlay.ipynb`
 - `notebooks/TESS/interm_tesscut_requests/interm_tesscut_requests.ipynb`
