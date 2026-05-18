@@ -1,6 +1,6 @@
 # Notebook CI – Latest vs Previous Run Comparison
 
-_Generated 2026-05-18 13:50 UTC_
+_Generated 2026-05-18 14:04 UTC_
 
 Workflow name: `Notebook CI - Scheduled`
 
@@ -11,7 +11,7 @@ Workflow name: `Notebook CI - Scheduled`
 | `spacetelescope/hellouniverse` | [#35](https://github.com/spacetelescope/hellouniverse/actions/runs/24619741210) | [#34](https://github.com/spacetelescope/hellouniverse/actions/runs/24297475556) | 0 | 0 | 0 | 0 |
 | `spacetelescope/mast_notebooks` | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | [#35](https://github.com/spacetelescope/mast_notebooks/actions/runs/25618550437) | 1 | 3 | 0 | 1 |
 | `spacetelescope/jdat_notebooks` | [#28](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25979988260) | [#27](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25618482201) | 0 | 0 | 5 | 5 |
-| `spacetelescope/hst_notebooks` | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | [#29](https://github.com/spacetelescope/hst_notebooks/actions/runs/25618503170) | 2 | 0 | 3 | 5 |
+| `spacetelescope/hst_notebooks` | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | [#29](https://github.com/spacetelescope/hst_notebooks/actions/runs/25618503170) | 1 | 0 | 3 | 4 |
 | `spacetelescope/roman_notebooks` | [#26](https://github.com/spacetelescope/roman_notebooks/actions/runs/25979986635) | [#25](https://github.com/spacetelescope/roman_notebooks/actions/runs/25618477167) | 1 | 1 | 10 | 11 |
 | `spacetelescope/jwst-pipeline-notebooks` | [#17](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25980042922) | [#16](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25618536039) | 0 | 0 | 0 | 0 |
 
@@ -256,17 +256,16 @@ _No resolved failures_
 
 | | Run | Date | Pass | Fail | Total |
 |---|---|---|---|---|---|
-| **Latest** | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | 2026-05-17 | 70 | 5 | 75 |
+| **Latest** | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | 2026-05-17 | 71 | 4 | 75 |
 | **Previous** | [#29](https://github.com/spacetelescope/hst_notebooks/actions/runs/25618503170) | 2026-05-10 | 71 | 3 | 74 |
 
-- **New failures:** 2
+- **New failures:** 1
 - **Resolved failures:** 0
 - **Consistent failures:** 3
 
-### 🔴 New Failures (2)
+### 🔴 New Failures (1)
 
 - `notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb`
-- `notebooks/DrizzlePac/mask_satellite/mask_satellite.ipynb`
 
 ### 🟢 Resolved Failures (0)
 
@@ -278,7 +277,7 @@ _No resolved failures_
 - `notebooks/HASP/FluxScaleTutorial/FluxScaleTutorial.ipynb`
 - `notebooks/WFC3/point_spread_function/hst_point_spread_function.ipynb`
 
-### ✅ Consistent Successes (69)
+### ✅ Consistent Successes (70)
 
 <details>
 <summary>Click to expand</summary>
@@ -319,6 +318,7 @@ _No resolved failures_
 - `notebooks/DrizzlePac/align_multiple_visits/align_multiple_visits.ipynb`
 - `notebooks/DrizzlePac/align_sparse_fields/align_sparse_fields.ipynb`
 - `notebooks/DrizzlePac/drizzle_wfpc2/drizzle_wfpc2.ipynb`
+- `notebooks/DrizzlePac/mask_satellite/mask_satellite.ipynb`
 - `notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.ipynb`
 - `notebooks/DrizzlePac/sky_matching/sky_matching.ipynb`
 - `notebooks/HASP/CoaddTutorial/CoaddTutorial.ipynb`
