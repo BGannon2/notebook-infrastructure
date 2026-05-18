@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T05:22:05Z",
+  "generated_at": "2026-05-18T13:50:44Z",
   "workflow_name": "Notebook CI - Scheduled",
   "repositories": [
     {
@@ -57,30 +57,28 @@
         "created_at": "2026-05-10T03:17:57Z"
       },
       "summary": {
-        "fail_latest": 3,
-        "pass_latest": 76,
+        "fail_latest": 1,
+        "pass_latest": 78,
         "total_latest": 79,
         "fail_previous": 3,
         "pass_previous": 76,
         "total_previous": 79,
-        "new_failures": 2,
-        "resolved_failures": 2,
-        "consistent_failures": 1,
-        "consistent_successes": 74
+        "new_failures": 1,
+        "resolved_failures": 3,
+        "consistent_failures": 0,
+        "consistent_successes": 75
       },
       "recent_notebooks_60d": [],
       "details": {
         "new_failures": [
-          "notebooks/TESS/interm_tasoc_lc/interm_tasoc_lc.ipynb",
           "notebooks/multi_mission/beginner_zcut/beginner_zcut.ipynb"
         ],
         "resolved_failures": [
           "notebooks/HSC/HSCV3_SMC_API/hscv3_smc_api.ipynb",
-          "notebooks/HSC/SWEEPS_HSCV3P1_API/sweeps_hscv3p1_api.ipynb"
-        ],
-        "consistent_failures": [
+          "notebooks/HSC/SWEEPS_HSCV3P1_API/sweeps_hscv3p1_api.ipynb",
           "notebooks/multi_mission/resolve_objects/resolve_objects.ipynb"
         ],
+        "consistent_failures": [],
         "consistent_successes": [
           "execute-all / process-notebooks (notebooks/IUE/exploring_UV_extinction_curves/exploring_UV_extinction_curves.ip...",
           "execute-all / process-notebooks (notebooks/K2/removing_instrumental_noise_using_pld/removing_instrumental_noise...",
@@ -145,6 +143,7 @@
           "notebooks/TESS/beginner_tic_search_hd209458/beginner_tic_search_hd209458.ipynb",
           "notebooks/TESS/beginner_tour_lc_tp/beginner_tour_lc_tp.ipynb",
           "notebooks/TESS/interm_gi_query/interm_gi_query.ipynb",
+          "notebooks/TESS/interm_tasoc_lc/interm_tasoc_lc.ipynb",
           "notebooks/TESS/interm_tess_prf_retrieve/interm_tess_prf_retrieve.ipynb",
           "notebooks/TESS/interm_tesscut_dss_overlay/interm_tesscut_dss_overlay.ipynb",
           "notebooks/TESS/interm_tesscut_requests/interm_tesscut_requests.ipynb",
