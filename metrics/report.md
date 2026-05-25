@@ -1,6 +1,6 @@
 # Notebook CI – Latest vs Previous Run Comparison
 
-_Generated 2026-05-18 14:04 UTC_
+_Generated 2026-05-25 05:31 UTC_
 
 Workflow name: `Notebook CI - Scheduled`
 
@@ -9,11 +9,11 @@ Workflow name: `Notebook CI - Scheduled`
 | Repository | Latest Run | Previous Run | New Failures | Resolved | Consistent Failures | Latest Fail Count |
 |---|---|---|---:|---:|---:|---:|
 | `spacetelescope/hellouniverse` | [#35](https://github.com/spacetelescope/hellouniverse/actions/runs/24619741210) | [#34](https://github.com/spacetelescope/hellouniverse/actions/runs/24297475556) | 0 | 0 | 0 | 0 |
-| `spacetelescope/mast_notebooks` | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | [#35](https://github.com/spacetelescope/mast_notebooks/actions/runs/25618550437) | 1 | 3 | 0 | 1 |
-| `spacetelescope/jdat_notebooks` | [#28](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25979988260) | [#27](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25618482201) | 0 | 0 | 5 | 5 |
-| `spacetelescope/hst_notebooks` | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | [#29](https://github.com/spacetelescope/hst_notebooks/actions/runs/25618503170) | 1 | 0 | 3 | 4 |
-| `spacetelescope/roman_notebooks` | [#26](https://github.com/spacetelescope/roman_notebooks/actions/runs/25979986635) | [#25](https://github.com/spacetelescope/roman_notebooks/actions/runs/25618477167) | 1 | 1 | 10 | 11 |
-| `spacetelescope/jwst-pipeline-notebooks` | [#17](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25980042922) | [#16](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25618536039) | 0 | 0 | 0 | 0 |
+| `spacetelescope/mast_notebooks` | [#37](https://github.com/spacetelescope/mast_notebooks/actions/runs/26350625575) | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | 3 | 0 | 1 | 4 |
+| `spacetelescope/jdat_notebooks` | [#29](https://github.com/spacetelescope/jdat_notebooks/actions/runs/26350564318) | [#28](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25979988260) | 0 | 2 | 3 | 3 |
+| `spacetelescope/hst_notebooks` | [#31](https://github.com/spacetelescope/hst_notebooks/actions/runs/26350581922) | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | 2 | 1 | 3 | 5 |
+| `spacetelescope/roman_notebooks` | [#27](https://github.com/spacetelescope/roman_notebooks/actions/runs/26350564346) | [#26](https://github.com/spacetelescope/roman_notebooks/actions/runs/25979986635) | 0 | 1 | 10 | 10 |
+| `spacetelescope/jwst-pipeline-notebooks` | [#18](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/26350606953) | [#17](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25980042922) | 0 | 0 | 0 | 0 |
 
 ## Per-Repository Details
 
@@ -59,26 +59,26 @@ _No consistent failures_ ✅
 
 | | Run | Date | Pass | Fail | Total |
 |---|---|---|---|---|---|
-| **Latest** | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | 2026-05-17 | 78 | 1 | 79 |
-| **Previous** | [#35](https://github.com/spacetelescope/mast_notebooks/actions/runs/25618550437) | 2026-05-10 | 76 | 3 | 79 |
+| **Latest** | [#37](https://github.com/spacetelescope/mast_notebooks/actions/runs/26350625575) | 2026-05-24 | 76 | 4 | 80 |
+| **Previous** | [#36](https://github.com/spacetelescope/mast_notebooks/actions/runs/25980063048) | 2026-05-17 | 78 | 1 | 79 |
 
-- **New failures:** 1
-- **Resolved failures:** 3
-- **Consistent failures:** 0
+- **New failures:** 3
+- **Resolved failures:** 0
+- **Consistent failures:** 1
 
-### 🔴 New Failures (1)
-
-- `notebooks/multi_mission/beginner_zcut/beginner_zcut.ipynb`
-
-### 🟢 Resolved Failures (3)
+### 🔴 New Failures (3)
 
 - `notebooks/HSC/HSCV3_SMC_API/hscv3_smc_api.ipynb`
 - `notebooks/HSC/SWEEPS_HSCV3P1_API/sweeps_hscv3p1_api.ipynb`
 - `notebooks/multi_mission/resolve_objects/resolve_objects.ipynb`
 
-### 🟡 Consistent Failures (0)
+### 🟢 Resolved Failures (0)
 
-_No consistent failures_ ✅
+_No resolved failures_
+
+### 🟡 Consistent Failures (1)
+
+- `notebooks/multi_mission/beginner_zcut/beginner_zcut.ipynb`
 
 ### ✅ Consistent Successes (75)
 
@@ -163,35 +163,38 @@ _No consistent failures_ ✅
 
 </details>
 
+### ➕ Only in Latest Run (1)
+
+- `notebooks/multi_mission/subscriptions/subscriptions.ipynb` (success)
+
 
 ## `spacetelescope/jdat_notebooks`
 
 | | Run | Date | Pass | Fail | Total |
 |---|---|---|---|---|---|
-| **Latest** | [#28](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25979988260) | 2026-05-17 | 49 | 5 | 54 |
-| **Previous** | [#27](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25618482201) | 2026-05-10 | 48 | 5 | 53 |
+| **Latest** | [#29](https://github.com/spacetelescope/jdat_notebooks/actions/runs/26350564318) | 2026-05-24 | 51 | 3 | 54 |
+| **Previous** | [#28](https://github.com/spacetelescope/jdat_notebooks/actions/runs/25979988260) | 2026-05-17 | 49 | 5 | 54 |
 
 - **New failures:** 0
-- **Resolved failures:** 0
-- **Consistent failures:** 5
+- **Resolved failures:** 2
+- **Consistent failures:** 3
 
 ### 🔴 New Failures (0)
 
 _No new failures_ ✅
 
-### 🟢 Resolved Failures (0)
+### 🟢 Resolved Failures (2)
 
-_No resolved failures_
+- `notebooks/NIRSpec/mos_spectroscopy_advanced/MOSspec_advanced.ipynb`
+- `notebooks/jdaviz_demo/notebooks/Imviz.ipynb`
 
-### 🟡 Consistent Failures (5)
+### 🟡 Consistent Failures (3)
 
 - `notebooks/NIRCam/psf_photometry/NIRCam_PSF_Photometry_Example.ipynb`
 - `notebooks/NIRISS/NIRISS_WFSS_advanced/02_niriss_wfss_spec2.ipynb`
-- `notebooks/NIRSpec/mos_spectroscopy_advanced/MOSspec_advanced.ipynb`
 - `notebooks/cross_instrument/rgb_imviz/imviz_rgb_carina.ipynb`
-- `notebooks/jdaviz_demo/notebooks/Imviz.ipynb`
 
-### ✅ Consistent Successes (48)
+### ✅ Consistent Successes (49)
 
 <details>
 <summary>Click to expand</summary>
@@ -201,6 +204,7 @@ _No resolved failures_
 - `execute-all / process-notebooks (notebooks/NIRCam/NIRCam_WFSS_simulating_spectra/Simulating_WFSS_spectra_CRDS.i...`
 - `execute-all / process-notebooks (notebooks/NIRISS/NIRISS_WFSS_postpipeline/01_Combine_and_normalize_1D_spectra....`
 - `execute-all / process-notebooks (notebooks/NIRISS/NIRISS_WFSS_postpipeline/03_Spatially_resolved_emission_line_...`
+- `execute-all / process-notebooks (notebooks/NIRSpec/extract_fixedslit_from_mos_ifu/extract_fixedslit_from_mos_if...`
 - `execute-all / process-notebooks (notebooks/NIRSpec/transit_spectroscopy_notebook/Exoplanet_Transmission_Spectra...`
 - `execute-all / process-notebooks (notebooks/cross_instrument/background_estimation_imaging/Imaging_Sky_Backgroun...`
 - `execute-all / process-notebooks (notebooks/cross_instrument/specviz_notebookGUI_interaction/specviz_notebook_gu...`
@@ -247,29 +251,26 @@ _No resolved failures_
 
 </details>
 
-### ➕ Only in Latest Run (1)
-
-- `execute-all / process-notebooks (notebooks/NIRSpec/extract_fixedslit_from_mos_ifu/extract_fixedslit_from_mos_if...` (success)
-
 
 ## `spacetelescope/hst_notebooks`
 
 | | Run | Date | Pass | Fail | Total |
 |---|---|---|---|---|---|
-| **Latest** | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | 2026-05-17 | 71 | 4 | 75 |
-| **Previous** | [#29](https://github.com/spacetelescope/hst_notebooks/actions/runs/25618503170) | 2026-05-10 | 71 | 3 | 74 |
+| **Latest** | [#31](https://github.com/spacetelescope/hst_notebooks/actions/runs/26350581922) | 2026-05-24 | 70 | 5 | 75 |
+| **Previous** | [#30](https://github.com/spacetelescope/hst_notebooks/actions/runs/25980016873) | 2026-05-17 | 71 | 4 | 75 |
 
-- **New failures:** 1
-- **Resolved failures:** 0
+- **New failures:** 2
+- **Resolved failures:** 1
 - **Consistent failures:** 3
 
-### 🔴 New Failures (1)
+### 🔴 New Failures (2)
+
+- `notebooks/COS/CalCOS/CalCOS.ipynb`
+- `notebooks/COS/SplitTag/SplitTag.ipynb`
+
+### 🟢 Resolved Failures (1)
 
 - `notebooks/DrizzlePac/align_to_catalogs/align_to_catalogs.ipynb`
-
-### 🟢 Resolved Failures (0)
-
-_No resolved failures_
 
 ### 🟡 Consistent Failures (3)
 
@@ -277,7 +278,7 @@ _No resolved failures_
 - `notebooks/HASP/FluxScaleTutorial/FluxScaleTutorial.ipynb`
 - `notebooks/WFC3/point_spread_function/hst_point_spread_function.ipynb`
 
-### ✅ Consistent Successes (70)
+### ✅ Consistent Successes (69)
 
 <details>
 <summary>Click to expand</summary>
@@ -306,13 +307,11 @@ _No resolved failures_
 - `notebooks/ACS/acs_subarrays/acs_subarrays.ipynb`
 - `notebooks/ACS/hst_orbits_ephem/hst_orbits_ephem.ipynb`
 - `notebooks/COS/AsnFile/AsnFile.ipynb`
-- `notebooks/COS/CalCOS/CalCOS.ipynb`
 - `notebooks/COS/DataDl/DataDl.ipynb`
 - `notebooks/COS/DayNight/DayNight.ipynb`
 - `notebooks/COS/ExceptionReport/ExceptionReport.ipynb`
 - `notebooks/COS/Extract/Extract.ipynb`
 - `notebooks/COS/Setup/Setup.ipynb`
-- `notebooks/COS/SplitTag/SplitTag.ipynb`
 - `notebooks/COS/ViewData/ViewData.ipynb`
 - `notebooks/DrizzlePac/align_mosaics/align_mosaics.ipynb`
 - `notebooks/DrizzlePac/align_multiple_visits/align_multiple_visits.ipynb`
@@ -337,6 +336,7 @@ _No resolved failures_
 - `notebooks/STIS/extraction/1D_Extraction.ipynb`
 - `notebooks/STIS/low_count_uncertainties/Low_Count_Uncertainties.ipynb`
 - `notebooks/STIS/target_acquisition/target_acquisition.ipynb`
+- `notebooks/STIS/time_tag/time_tag.ipynb`
 - `notebooks/STIS/view_data/view_data.ipynb`
 - `notebooks/WFC3/calwf3_recalibration/calwf3_recal_tvb.ipynb`
 - `notebooks/WFC3/calwf3_v1.0_cte/calwf3_with_v1.0_PCTE.ipynb`
@@ -355,29 +355,25 @@ _No resolved failures_
 
 </details>
 
-### ➕ Only in Latest Run (1)
-
-- `notebooks/STIS/time_tag/time_tag.ipynb` (success)
-
 
 ## `spacetelescope/roman_notebooks`
 
 | | Run | Date | Pass | Fail | Total |
 |---|---|---|---|---|---|
-| **Latest** | [#26](https://github.com/spacetelescope/roman_notebooks/actions/runs/25979986635) | 2026-05-17 | 8 | 11 | 19 |
-| **Previous** | [#25](https://github.com/spacetelescope/roman_notebooks/actions/runs/25618477167) | 2026-05-10 | 8 | 11 | 19 |
+| **Latest** | [#27](https://github.com/spacetelescope/roman_notebooks/actions/runs/26350564346) | 2026-05-24 | 9 | 10 | 19 |
+| **Previous** | [#26](https://github.com/spacetelescope/roman_notebooks/actions/runs/25979986635) | 2026-05-17 | 8 | 11 | 19 |
 
-- **New failures:** 1
+- **New failures:** 0
 - **Resolved failures:** 1
 - **Consistent failures:** 10
 
-### 🔴 New Failures (1)
+### 🔴 New Failures (0)
 
-- `notebooks/romanisim/romanisim.ipynb`
+_No new failures_ ✅
 
 ### 🟢 Resolved Failures (1)
 
-- `notebooks/exposure_pipeline/exposure_pipeline.ipynb`
+- `notebooks/romanisim/romanisim.ipynb`
 
 ### 🟡 Consistent Failures (10)
 
@@ -392,13 +388,14 @@ _No resolved failures_
 - `notebooks/synphot/synphot.ipynb`
 - `notebooks/working_with_asdf/working_with_asdf.ipynb`
 
-### ✅ Consistent Successes (7)
+### ✅ Consistent Successes (8)
 
 <details>
 <summary>Click to expand</summary>
 
 - `notebooks/background_visualization_tool/RBVT.ipynb`
 - `notebooks/data_discovery_and_access/data_discovery_and_access.ipynb`
+- `notebooks/exposure_pipeline/exposure_pipeline.ipynb`
 - `notebooks/footprint_visualization/footprint_visualization.ipynb`
 - `notebooks/grism_spectral_extraction/grism_spectral_extraction.ipynb`
 - `notebooks/ground_test_analysis/wfi_tvac_brightstar.ipynb`
@@ -412,8 +409,8 @@ _No resolved failures_
 
 | | Run | Date | Pass | Fail | Total |
 |---|---|---|---|---|---|
-| **Latest** | [#17](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25980042922) | 2026-05-17 | 17 | 0 | 17 |
-| **Previous** | [#16](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25618536039) | 2026-05-10 | 17 | 0 | 17 |
+| **Latest** | [#18](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/26350606953) | 2026-05-24 | 17 | 0 | 17 |
+| **Previous** | [#17](https://github.com/spacetelescope/jwst-pipeline-notebooks/actions/runs/25980042922) | 2026-05-17 | 17 | 0 | 17 |
 
 - **New failures:** 0
 - **Resolved failures:** 0
