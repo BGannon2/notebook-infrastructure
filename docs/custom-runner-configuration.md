@@ -22,7 +22,7 @@ The default GitHub-hosted runner (`ubuntu-latest`) has **2 CPUs and about 7 GB o
 - **Slow runs or timeouts** - heavy computation (large reductions, ML training, simulations) that needs more CPU cores.
 - **Known resource-intensive stages** - for example JWST pipeline Stage 2/3 notebooks.
 
-When that happens, map the heavy notebook to a larger runner instead of the default. You assign runners per notebook by setting `custom-runner-config: true` on the caller workflow and adding a `ci_config.txt` file (detailed below). Larger options include GitHub's bigger hosted runners (`ubuntu-latest-4-cores`, `-8-cores`, `-16-cores`) and organization self-hosted runners (e.g. `jwst-pipeline-notebooks-64gb`). Notebooks not listed in `ci_config.txt` keep using `ubuntu-latest`, so you only pay for large runners where they are actually needed.
+When that happens, map the heavy notebook to a larger runner instead of the default. You assign runners per notebook by setting `custom-runner-config: true` on the caller workflow and adding a `ci_config.txt` file (detailed below). Larger options include GitHub's bigger hosted runners (`ubuntu-latest-4-cores`, `-8-cores`, `-16-cores`) and self-hosted runners registered in your own organization. (The `jwst-pipeline-notebooks-*` labels used in the examples on this page are STScI-internal self-hosted runners; external users substitute GitHub-hosted runners or their own organization's labels.) Notebooks not listed in `ci_config.txt` keep using `ubuntu-latest`, so you only pay for large runners where they are actually needed.
 
 ## Configuration
 
@@ -148,6 +148,9 @@ notebooks/validation/memory_stress_test.ipynb:jwst-pipeline-notebooks-128gb
 ```
 
 ### 3. Available Runner Types
+
+!!! warning "Hosted runners vs. STScI-internal runners"
+    **GitHub-hosted** runners (`ubuntu-latest`, `ubuntu-latest-4-cores`, `-8-cores`, `-16-cores`) are available to everyone. The custom labels used in the examples on this page - `jwst-pipeline-notebooks-*`, `gpu-enabled-runner`, `ml-training-64gb`, and similar - are **STScI organization self-hosted runners** and only work inside the `spacetelescope` org. External users should use GitHub-hosted runners, or self-hosted runners registered in their own organization under their own labels.
 
 The workflow supports any GitHub runner labels configured in your organization:
 
