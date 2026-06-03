@@ -954,7 +954,6 @@ echo "✅ Full pipeline simulation completed!"
 - **[Complete Local Testing Guide](local-testing-guide.md)** - Detailed testing methods
 - **[Scripts Documentation](https://github.com/spacetelescope/notebook-ci-actions/blob/main/scripts/README.md)** - Script usage and examples
 - **[Act Documentation](https://github.com/nektos/act)** - GitHub Actions local runner
-- **[Migration Guide](migration-guide.md)** - Repository migration process
 
 ### :material-lightbulb: Tips and Best Practices
 

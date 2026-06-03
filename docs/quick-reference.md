@@ -262,7 +262,6 @@ your-repository/
 ## :material-link-variant: Useful Links
 
 - **Main Documentation**: [README.md](https://github.com/spacetelescope/notebook-ci-actions/blob/main/README.md)
-- **Migration Guide**: [Migration Guide](migration-guide.md)
 - **Troubleshooting**: [Troubleshooting](troubleshooting-unified.md)
 - **Complete Examples**: [Complete Setup Example](https://github.com/spacetelescope/notebook-ci-actions/blob/main/examples/complete-setup-example.md)
 - **Configuration Reference**: [Configuration Reference](configuration-reference.md)

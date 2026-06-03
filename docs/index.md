@@ -19,7 +19,6 @@ or edit the CI itself, you just need your notebooks to pass.
 You set up the caller workflows, choose which checks run, and manage migrations.
 
 [Configuration Reference :material-arrow-right:](configuration-reference.md){ .md-button .md-button--primary }
-[Migration Guide](migration-guide.md){ .md-button }
 
 ## :material-server: I run the infrastructure
 

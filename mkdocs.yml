@@ -73,7 +73,6 @@ nav:
       - Selective Execution & Smart Workflows: selective-execution.md
       - Scheduled Weekly Runs: scheduled-runs.md
       - Diagnosing CI Failures: ci_best_practices.md
-      - Migration Guide: migration-guide.md
       - Semantic Versioning: semantic-versioning.md
   - Infrastructure:
       - Custom Runner Configuration: custom-runner-configuration.md

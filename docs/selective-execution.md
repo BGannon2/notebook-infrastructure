@@ -309,7 +309,6 @@ Assuming GitHub Actions pricing of $0.008/minute:
 ## :material-link-variant: Related Documentation
 
 - [Unified Workflow Guide](https://github.com/spacetelescope/notebook-ci-actions/blob/main/README.md)
-- [Migration Checklist](migration-guide.md)
 - [Configuration Reference](configuration-reference.md)
 - [Example Workflows](https://github.com/spacetelescope/notebook-ci-actions/blob/main/examples/README.md)
 
@@ -634,8 +633,6 @@ Enable detailed logging in smart workflows:
 ### :material-link-variant: Related Documentation
 
 - [Core Workflows Documentation](https://github.com/spacetelescope/notebook-ci-actions/blob/main/README.md)
-- [Migration Guide](migration-guide.md)
-- [Repository Migration Checklist](migration-guide.md)
 - [Example Workflows Guide](https://github.com/spacetelescope/notebook-ci-actions/blob/main/README.md)
 
 ### :material-lifebuoy: Support
