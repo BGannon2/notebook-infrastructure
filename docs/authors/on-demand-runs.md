@@ -63,7 +63,7 @@ read logs, exactly like a PR run.
 !!! note "Faster feedback lives on your laptop"
     On-demand runs use real CI runners and take a few minutes. While you are
     actively editing, the local harness is faster: see
-    [Local Testing (Cheatsheet)](../local-testing-quick-reference.md). Use on-demand
+    [Local Testing (Cheatsheet)](../local-testing-guide.md). Use on-demand
     runs when you want the real CI environment or to rebuild the site.
 
 ## Reading the result

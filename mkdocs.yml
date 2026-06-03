@@ -59,25 +59,21 @@ nav:
   - For Notebook Authors:
       - Full Guide: authors/guide.md
       - Quick Reference: authors/quick-reference.md
-      - Set Up a New Repo: authors/setup-repo.md
-      - Creating a Repo (Detailed): creating_a_repo.md
+      - Creating a Repo: creating_a_repo.md
       - Contributing Notebooks: contributing_notebooks.md
       - PR Walkthrough & Troubleshooting: ci_operators_guide.md
       - On-Demand Runs: authors/on-demand-runs.md
-      - Local Testing (Cheatsheet): local-testing-quick-reference.md
-      - Local Testing (Full Guide): local-testing-guide.md
+      - Local Testing: local-testing-guide.md
       - Notebook Style: style.md
       - Reviewing Notebooks: reviewing.md
   - For Maintainers:
       - Operator Guide: operator-user-guide.md
       - Configuration Reference: configuration-reference.md
       - Setup Quick Reference: quick-reference.md
-      - Selective Execution: selective-execution.md
-      - Smart Workflows: smart-workflows.md
+      - Selective Execution & Smart Workflows: selective-execution.md
       - Scheduled Weekly Runs: scheduled-runs.md
       - Diagnosing CI Failures: ci_best_practices.md
       - Migration Guide: migration-guide.md
-      - Repository Migration Checklist: repository-migration-checklist.md
       - Semantic Versioning: semantic-versioning.md
   - Infrastructure:
       - Custom Runner Configuration: custom-runner-configuration.md
