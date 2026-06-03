@@ -38,6 +38,12 @@ jobs:
     secrets: inherit
 ```
 
+!!! note "Why `on-demand` and not `scheduled`?"
+    The workflow also defines a dedicated `execution-mode: 'scheduled'`. The standard
+    template configures the weekly job with `on-demand` + `trigger-event: 'execute'` to
+    re-execute notebooks; both are valid. Match whatever your repo's `notebook-scheduled.yml`
+    already uses.
+
 !!! note "Scheduled runs only fire on the default branch"
     GitHub runs `schedule` triggers from the workflow file on your **default
     branch** (`main`). Changes to the cron on a feature branch have no effect

@@ -6,6 +6,34 @@
 
 This document provides a comprehensive reference for configuring the unified notebook CI/CD system.
 
+## Workflow inputs
+
+These mirror the `workflow_call` inputs of `notebook-ci-unified.yml@v1` (the source of truth).
+
+| Input | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| `execution-mode` | string | yes | - | `pr`, `merge`, `scheduled`, `on-demand` |
+| `trigger-event` | string | no | `all` | `validate`, `execute`, `security`, `html`, `deprecate`, `all` (on-demand) |
+| `python-version` | string | no | `3.11` | Python version |
+| `conda-environment` | string | no | - | Custom conda env (e.g. `hstcal`, `stenv`) |
+| `custom-requirements` | string | no | - | Path to a custom requirements file |
+| `crds-server-url` | string | no | `''` | Sets `CRDS_SERVER_URL` (JWST-style pipelines) |
+| `crds-context` | string | no | `''` | Sets `CRDS_CONTEXT` |
+| `crds-path` | string | no | `''` | Sets `CRDS_PATH` |
+| `single-notebook` | string | no | - | Single notebook path for a targeted run |
+| `affected-directories` | string (JSON) | no | `[]` | JSON array of directories (auto-detected or manual) |
+| `enable-validation` | boolean | no | `true` | pytest nbval validation |
+| `enable-security` | boolean | no | `true` | bandit security scan |
+| `enable-execution` | boolean | no | `true` | Notebook execution |
+| `enable-storage` | boolean | no | `true` | Store executed outputs to `gh-storage` |
+| `enable-html-build` | boolean | no | `false` | JupyterBook HTML build |
+| `pre-processing-script` | string | no | - | Script run before validation/execution |
+| `post-processing-script` | string | no | - | Script run after execution |
+| `deprecation-days` | number | no | `60` | Days until deprecation (deprecate event) |
+| `custom-runner-config` | boolean | no | `false` | Select runners via `ci_config.txt` |
+
+**Secrets** (all optional): `CASJOBS_USERID`, `CASJOBS_PW`.
+
 ## Core Configuration Parameters
 
 ### Execution Mode

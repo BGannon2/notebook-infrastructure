@@ -78,14 +78,17 @@ with:
 | `trigger-event` | string | `all` | `validate`, `execute`, `security`, `html`, `deprecate` |
 | `python-version` | string | `3.11` | Python version to use |
 | `conda-environment` | string | - | Custom conda environment |
+| `custom-requirements` | string | - | Path to a custom requirements file |
 | `single-notebook` | string | - | Path to single notebook |
 | `enable-validation` | boolean | `true` | Enable pytest nbval |
 | `enable-security` | boolean | `true` | Enable bandit scanning |
 | `enable-execution` | boolean | `true` | Enable notebook execution |
 | `enable-storage` | boolean | `true` | Store outputs to gh-storage |
 | `enable-html-build` | boolean | `false` | Build HTML documentation |
-| `post-processing-script` | string | - | Custom post-processing script |
+| `pre-processing-script` | string | - | Script run before validation/execution |
+| `post-processing-script` | string | - | Script run after execution |
 | `deprecation-days` | number | `60` | Days until deprecation |
+| `custom-runner-config` | boolean | `false` | Select runners via `ci_config.txt` |
 
 ## :material-wrench: Common Configurations
 
@@ -268,10 +271,9 @@ your-repository/
 
 ## :material-tag: Version Information
 
-- **System**: Unified Notebook CI/CD v1.0
-- **Last Updated**: July 2025
+- **System**: Unified Notebook CI/CD (`notebook-ci-unified.yml`)
 - **Compatibility**: All STScI notebook repositories
-- **Workflow Version**: `@{current version}` (recommended)
+- **Workflow Version**: `@v1` (recommended)
 
 ---
 
