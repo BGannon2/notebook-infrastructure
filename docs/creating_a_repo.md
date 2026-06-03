@@ -86,6 +86,16 @@ Ensure the CI system is working correctly by testing the actions:
 - After creating the PR, GitHub Actions should automatically start running checks.
 - Verify the "Checks" tab within your PR to confirm actions for notebook validation, execution, and security are running successfully.
 
+## What success looks like
+
+When everything is wired up correctly:
+
+- Your pull requests show green checks for **validation**, **execution**, and **security** in the PR's Checks tab.
+- After merging to `main`, your notebooks publish to your repository's GitHub Pages site (`https://<owner>.github.io/<your-repo>/`).
+- The weekly [scheduled run](scheduled-runs.md) stays green, confirming your notebooks still execute as dependencies and data change over time.
+
+If a check is red, open it from the Checks/Actions tab and read the logs. See [Diagnosing CI Failures](ci_best_practices.md) and [Troubleshooting](troubleshooting-unified.md).
+
 ## Next Steps
 
 Your repository setup is complete. Regularly update your notebooks and push the changes to your repository; the notebook CI system will automatically test and publish updates to your documentation, providing a seamless and efficient workflow.

@@ -1,5 +1,9 @@
 # Configuration Reference for Unified Notebook CI/CD
 
+!!! info "Canonical reference (maintainers)"
+    These inputs mirror `notebook-ci-unified.yml@v1` in [`notebook-ci-actions`](https://github.com/spacetelescope/notebook-ci-actions) (the source of truth). If you just write notebooks, see the [Quick Reference](authors/quick-reference.md).
+
+
 This document provides a comprehensive reference for configuring the unified notebook CI/CD system.
 
 ## Core Configuration Parameters

@@ -304,7 +304,8 @@ enable-storage: false    # Disable for PRs, enable for main
 
 ```yaml
 # For repositories with large notebooks or datasets
-execution-mode: 'validation-only'  # Skip execution on PRs
+execution-mode: 'pr'        # PR validation
+enable-execution: false     # skip execution on PRs
 enable-html-build: false          # Build only on main branch
 
 # For educational repositories
@@ -386,5 +387,5 @@ For critical production issues:
 ---
 
 **Last Updated**: July 2025  
-**System Version**: Unified v3.0  
+**System Version**: Unified workflow (`@v1`)  
 **Compatibility**: All STScI notebook repositories

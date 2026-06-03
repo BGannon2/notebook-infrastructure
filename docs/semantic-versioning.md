@@ -1,5 +1,9 @@
 # Semantic Versioning for GitHub Actions Workflows
 
+!!! info "For maintainers"
+    This page is reference material for repository maintainers and infrastructure owners. If you just write notebooks, start with the [Quick Reference](authors/quick-reference.md).
+
+
 This document explains how to implement semantic versioning for reusable GitHub Actions workflows and how to automate the versioning process using GitHub Actions.
 
 ## :material-clipboard-text: Table of Contents
@@ -70,13 +74,13 @@ inputs:
 
 **Example New Features:**
 ```yaml
-# v1.2.0 - NEW: Added post-run-script input
+# v1.2.0 - NEW: Added post-processing-script input
 inputs:
   python-version:
     required: false
     type: string
     default: "3.11"
-  post-run-script:  # ← New optional input
+  post-processing-script:  # ← New optional input
     required: false
     type: string
 ```
@@ -295,8 +299,8 @@ jobs:
     uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v1
     with:
       python-version: "3.11"
-      execution-mode: "full"
-      build-html: true
+      execution-mode: "merge"
+      enable-html-build: true
 
 # v2.0.0 (new) - Example breaking changes
 jobs:
@@ -304,9 +308,9 @@ jobs:
     uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v2
     with:
       python-version: "3.11"
-      execution-mode: "full"
-      # BREAKING: build-html removed, use separate job
-      enable-security-scan: true  # NEW: required parameter
+      execution-mode: "merge"
+      # BREAKING: example breaking change
+      enable-security: true  # NEW: required parameter
 ```
 
 #### Step 2: Test in Feature Branch
@@ -466,3 +470,13 @@ jobs:
 
 
 For the latest version information, see the [Releases page](../../releases).
+
+## Pinning and rollback
+
+Callers reference the unified workflow by tag:
+
+- **`@v1`** (recommended): a moving major tag that always points at the latest `v1.x.x`. You get bug fixes automatically and only opt into breaking changes by moving to `@v2`.
+- **`@v1.2.3`**: an exact release. Most stable, but you miss fixes until you bump.
+- **`@<commit-sha>`**: immutable and maximally certain about exactly what runs. Use for repositories with stricter supply-chain requirements; update deliberately.
+
+**Rolling back a bad release.** If a new `v1.x.x` breaks callers, either pin the affected caller to the last known-good exact tag (e.g. `@v1.2.2`) or commit SHA until the issue is fixed, or, as a maintainer of `notebook-ci-actions`, repoint the moving `@v1` tag to the previous release commit so every caller recovers at once.

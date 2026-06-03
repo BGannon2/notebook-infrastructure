@@ -56,6 +56,7 @@ plugins:
 nav:
   - Home: index.md
   - Overview: CI_Overview.md
+  - Glossary: glossary.md
   - For Notebook Authors:
       - Full Guide: authors/guide.md
       - Quick Reference: authors/quick-reference.md

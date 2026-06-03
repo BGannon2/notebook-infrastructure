@@ -6,6 +6,11 @@ notebook repositories, powered by
 
 Pick the path that matches what you're doing.
 
+!!! tip "Setting up a new notebook repository?"
+    Start with **[Creating a Repo](creating_a_repo.md)** -- it walks you from an
+    empty repo to passing CI, step by step. New to the terms? See the
+    [Glossary](glossary.md).
+
 ## :material-notebook-edit: I write notebooks
 
 You contribute notebooks to a repo that already uses this CI. You don't set up

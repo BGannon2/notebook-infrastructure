@@ -76,9 +76,9 @@ A change to the **root** `requirements.txt` deliberately runs everything (safety
 1. **Use the smart/selective caller workflows.** Point your `.github/workflows/` callers at `notebook-ci-unified.yml` (see the [examples in notebook-ci-actions](https://github.com/spacetelescope/notebook-ci-actions/tree/main/examples)).
 2. **Organize directory dependencies.** Give each notebook subdirectory a self-contained `requirements.txt`, optionally inheriting from the root with `-r ../../requirements.txt`.
 3. **Repository-specific customization:**
-   - `jwst-pipeline-notebooks`: set a `post-run-script` (e.g. `scripts/jdaviz_image_replacement.sh`).
+   - `jwst-pipeline-notebooks`: set a `post-processing-script` (e.g. `scripts/jdaviz_image_replacement.sh`).
    - `hst_notebooks`: micromamba is auto-detected; no extra config.
-   - `hellouniverse`: consider `security-scan: false` for the educational repo.
+   - `hellouniverse`: consider `enable-security: false` for the educational repo.
 4. **Test both paths:** open a docs-only PR (expect a docs rebuild) and a notebook PR (expect full CI), and a single-directory change (expect only that directory).
 
 ### Limiting parallelism

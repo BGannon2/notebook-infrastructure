@@ -2,6 +2,15 @@
 
 This guide provides comprehensive methods for testing GitHub Actions workflows locally before pushing changes to GitHub. Local testing helps catch issues early, reduces CI/CD costs, and speeds up development.
 
+!!! note "Two different `execution` settings"
+    The local harness uses an **`EXECUTION_MODE`** environment variable
+    (`validation-only`, `quick`, `full`) that controls `test-local-ci.sh`. That is
+    separate from the workflow's **`execution-mode`** input (`pr`, `merge`,
+    `scheduled`, `on-demand`) in the [Configuration Reference](configuration-reference.md).
+    The helper scripts (`test-local-ci.sh`, `diagnose-local-ci.sh`) ship in
+    [`notebook-ci-actions/scripts`](https://github.com/spacetelescope/notebook-ci-actions/tree/main/scripts);
+    clone that repo alongside yours to use them.
+
 ## :material-clipboard-text: Table of Contents
 
 - [Overview](#overview)
@@ -296,10 +305,9 @@ Test workflows using manual dispatch:
 
 ```bash
 # Trigger workflow manually
-gh workflow run "Notebook CI - On Demand" \
-  --field python-version=3.11 \
-  --field execution-mode=validation-only \
-  --field run-security-scan=true
+gh workflow run "Notebook CI - On-Demand Actions" \
+  --field action_type=validate-all \
+  --field python_version=3.11
 
 # Monitor workflow run
 gh run list --limit 1

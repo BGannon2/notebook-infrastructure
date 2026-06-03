@@ -1,5 +1,9 @@
 # Custom Runner Configuration
 
+!!! info "For maintainers"
+    This page is reference material for repository maintainers and infrastructure owners. If you just write notebooks, start with the [Quick Reference](authors/quick-reference.md).
+
+
 The unified workflow now supports custom runner configuration, allowing different notebooks to run on different GitHub runners based on their computational requirements.
 
 ## Overview

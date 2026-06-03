@@ -1,5 +1,9 @@
 # Scheduled Weekly Runs
 
+!!! info "For maintainers"
+    This page is reference material for repository maintainers and infrastructure owners. If you just write notebooks, start with the [Quick Reference](authors/quick-reference.md).
+
+
 *For maintainers: what the weekly scheduled run does, and how to read it.*
 
 Notebooks rot even when nobody touches them. A dependency ships a breaking
@@ -80,9 +84,10 @@ a scheduled failure points at the environment. Read it that way:
    [Troubleshooting guide](troubleshooting-unified.md).
 
 !!! tip "Stay notified"
-    GitHub notifies the maintainer who last edited the workflow file when a
-    scheduled run fails. If that is not the right person, watch the Actions tab
-    or configure repository notifications so a weekly failure does not sit unseen.
+    Scheduled failures are reported in the repository's **Actions** tab and to the
+    repository-specific **Slack channel** the CI posts to. GitHub also emails the
+    maintainer who last edited the workflow file. If that is not the right person,
+    configure repository notifications so a weekly failure is not missed.
 
 ## Related
 

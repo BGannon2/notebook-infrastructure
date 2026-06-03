@@ -186,7 +186,7 @@ Look for:
 #### Documentation Build Issues
 Look for:
 - `Build documentation` failures
-- Sphinx/Jekyll build errors
+- JupyterBook build errors
 - Missing file references
 
 ### 3. Workflow Status API
@@ -282,15 +282,15 @@ FileNotFoundError: No such file or directory: 'data/file.fits'
 
 ### 3. Documentation Build Issues
 
-#### Issue: Sphinx Build Failures
+#### Issue: JupyterBook Build Failures
 ```
 Warning, treated as error: document isn't included in any toctree
 ```
 
 **Solutions**:
-1. **Update index**: Add notebook to `docs/index.rst` or similar
+1. **Update the table of contents**: Add the notebook to `_toc.yml`
 2. **Fix references**: Ensure all cross-references are valid
-3. **Check syntax**: Validate reStructuredText syntax
+3. **Check syntax**: Validate the notebook and Markdown syntax
 
 #### Issue: Missing Static Files
 ```
