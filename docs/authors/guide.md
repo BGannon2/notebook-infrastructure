@@ -207,7 +207,7 @@ failure signatures and what they usually mean:
 | Cell fails with `NameError` | Notebook relies on out-of-order execution | Restart kernel and Run All; fix the order |
 | Security check fails | `bandit` flagged a real pattern | Remove hardcoded secrets / unsafe calls |
 | Passed before, fails now, your code unchanged | External data or dependency drifted | Flag to maintainer; check data source |
-| Times out | Notebook too slow or stuck on a download | Reduce work, or cache/stage data via the pre-processing hook |
+| Times out or runs out of memory | Notebook too slow/heavy, or stuck on a download | Reduce work or stage data via the pre-processing hook; if it is genuinely resource-heavy, ask a maintainer to assign a [larger runner](../custom-runner-configuration.md) |
 
 For verbose logs, a maintainer can enable `ACTIONS_STEP_DEBUG` in the repository
 variables.

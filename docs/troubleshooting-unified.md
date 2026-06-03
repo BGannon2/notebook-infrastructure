@@ -313,6 +313,9 @@ enable-security: false    # Less critical for tutorials
 enable-storage: true      # Keep for examples
 ```
 
+!!! tip "Resource-heavy notebooks need bigger runners"
+    If a notebook exceeds the default runner's memory (~7 GB) or CPU (2 cores) - out-of-memory kills (exit code 137), `MemoryError`, or long timeouts - assign it a larger runner with `custom-runner-config` and a `ci_config.txt` mapping. See [Custom Runner Configuration](custom-runner-configuration.md).
+
 ## :material-help-circle: Emergency Procedures
 
 ### Rollback to Previous Workflows

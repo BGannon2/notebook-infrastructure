@@ -14,6 +14,16 @@ This feature enables:
 - **Automatic selection**: Runners are selected based on configuration file
 - **Backward compatibility**: Works with existing workflows without changes
 
+## When a notebook needs a larger runner
+
+The default GitHub-hosted runner (`ubuntu-latest`) has **2 CPUs and about 7 GB of RAM**. Most notebooks run fine on it, but some need more:
+
+- **Out-of-memory failures** - the job is killed (exit code 137) or raises `MemoryError` because the notebook loads more data than fits in ~7 GB.
+- **Slow runs or timeouts** - heavy computation (large reductions, ML training, simulations) that needs more CPU cores.
+- **Known resource-intensive stages** - for example JWST pipeline Stage 2/3 notebooks.
+
+When that happens, map the heavy notebook to a larger runner instead of the default. You assign runners per notebook by setting `custom-runner-config: true` on the caller workflow and adding a `ci_config.txt` file (detailed below). Larger options include GitHub's bigger hosted runners (`ubuntu-latest-4-cores`, `-8-cores`, `-16-cores`) and organization self-hosted runners (e.g. `jwst-pipeline-notebooks-64gb`). Notebooks not listed in `ci_config.txt` keep using `ubuntu-latest`, so you only pay for large runners where they are actually needed.
+
 ## Configuration
 
 ### 1. Enable Custom Runners
