@@ -1,5 +1,11 @@
 # Overview of notebook CI caller scripts
 
+!!! note "Earlier CI generation"
+    These caller examples (`ci_nightly.yml`, etc.) reflect the previous generation
+    of the notebook CI. The current system uses the unified workflow
+    `notebook-ci-unified.yml`; see the [Configuration Reference](configuration-reference.md)
+    and [Setup Quick Reference](quick-reference.md) for current caller examples.
+
 ## Scheduled Notebook Execution - ci_nightly.yml
 
 The "Scheduled Notebook Execution" GitHub Action is designed to automate the regular execution of Jupyter Notebooks within a repository. This scheduled execution ensures that notebooks remain functional over time and that their outputs are up-to-date.

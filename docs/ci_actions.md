@@ -1,5 +1,11 @@
 # Functional descriptions of actions located in spacetelescope/notebook-ci-action
 
+!!! note "Earlier CI generation"
+    This page documents the previous generation of the notebook CI (individually
+    named actions such as `ci_runner.yml`). The current system uses the unified
+    workflow `notebook-ci-unified.yml`; see the
+    [Configuration Reference](configuration-reference.md) for the options in use today.
+
 ## GitHub Action for Notebook Execution with Python Version Control and CASJOBS Authentication - ci_runner.yml
 
 This GitHub Action, named "Scheduled Notebook Execution," is tailored for projects that require automated execution and validation of Jupyter Notebooks, with the added capability to specify the Python version and utilize CASJOBS authentication for notebooks that require external data access.

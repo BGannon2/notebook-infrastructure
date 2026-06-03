@@ -63,18 +63,10 @@ CI workflows, example structure, and docs deploy already in place.
 
 1. Open the template:
    [github.com/spacetelescope/notebook-ci-template](https://github.com/spacetelescope/notebook-ci-template).
-2. Click **Use this template → Create a new repository**.
+2. Click **Use this template → Create a new repository**, and check **Include all branches** so the `gh-pages` and `gh-storage` branches come along.
 3. Name your repo, choose the owner, and create it.
-4. Clone your new repo:
-
-    ```bash
-    git clone https://github.com/<your-account>/<your-repo-name>.git
-    ```
-
-5. In your new repo, set **Settings → Pages → Source** to **GitHub Actions** (one
-   time) so the docs site can publish.
-6. Add your notebooks, declare dependencies in `requirements.txt`, and open a pull
-   request to see the CI run.
+4. Follow [Creating a Repo (Detailed)](../creating_a_repo.md) for the full setup: editing `_toc.yml` and `_config.yml`, setting the `PYTHON_VERSION` repository variable, and enabling Pages on the `gh-pages` branch.
+5. Add your notebooks, declare dependencies in `requirements.txt`, and open a pull request to see the CI run.
 
 !!! warning "Use the template, do not fork"
     "Use this template" gives you a clean, independent repository with no upstream
