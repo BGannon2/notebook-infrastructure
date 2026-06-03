@@ -43,7 +43,9 @@ on:
 - `Error: Permission denied (publickey)`
 - `Error: Insufficient permissions to access workflow`
 
-**Solutions:**
+`Permission denied (publickey)` is a git/SSH problem, not the workflow: confirm your SSH key is registered with GitHub (`ssh -T git@github.com`) or switch the remote to HTTPS.
+
+**For insufficient workflow permissions:**
 ```bash
 # 1. Verify GITHUB_TOKEN permissions
 # In repository settings: Settings → Actions → General
@@ -52,8 +54,10 @@ on:
 # 2. Check if repository is private
 # Private repos may need additional configuration
 
-# 3. Verify the workflow reference
-# Ensure you're using the correct organization and branch
+# 3. Verify the caller references the workflow correctly (see below)
+```
+
+```yaml
 uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v1
 ```
 
@@ -324,7 +328,7 @@ enable-storage: true      # Keep for examples
 # If unified system causes critical issues
 cd your-repository
 
-# 1. Restore from backup (if using migration script)
+# 1. Restore your previous workflows from a backup branch
 rm .github/workflows/*.yml
 cp .github/workflows-backup/*.yml .github/workflows/
 git add .github/workflows/
@@ -378,7 +382,6 @@ When reporting issues, include:
 - **STScI staff:** [Submit a ticket to SPB](https://innerspace.stsci.edu/pages/viewpage.action?pageId=637400835&spaceKey=DDP&title=DMD%2BDev%2BPortal%2BHome)
 - **GitHub Issues**: [Create issue in notebook-ci-actions](https://github.com/spacetelescope/notebook-ci-actions/issues)
 - **Documentation**: Check `docs/` folder for detailed guides
-- **Setup script**: run `scripts/migrate-to-unified.sh` from your `notebook-ci-actions` clone (see the [Setup Quick Reference](quick-reference.md))
 
 ### Emergency Contact
 

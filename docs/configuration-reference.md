@@ -502,27 +502,6 @@ Monitor these metrics in workflow summaries:
 - Cache hit/miss ratios
 - Resource usage
 
-## Migration Considerations
-
-### From Existing Workflows
-
-When migrating, map these configurations:
-
-| Old Setting | New Configuration |
-|-------------|-------------------|
-| Manual matrix setup | Automatic detection |
-| Hardcoded Python version | `python-version` parameter |
-| Fixed conda env | `conda-environment` parameter |
-| Always-on features | Feature toggle parameters |
-| Repository-specific logic | Configurable parameters |
-
-### Testing Migration
-
-1. **Start with PR workflow**: Test the most common use case first
-2. **Use draft PRs**: Test without affecting main branch
-3. **Monitor performance**: Compare execution times and resource usage
-4. **Verify outputs**: Ensure generated outputs match expectations
-
 ## Best Practices
 
 ### Configuration Management

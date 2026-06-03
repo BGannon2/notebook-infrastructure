@@ -2,28 +2,23 @@
 
 A concise reference for using the unified notebook CI/CD system.
 
-## :material-rocket-launch: Setup Commands
+## :material-rocket-launch: Setup
 
-### Automated Setup (Recommended)
+For a **new repository**, create it from the template - see [Creating a Repo](creating_a_repo.md). The caller workflows come pre-wired, so there is nothing to copy.
+
+### Adding the workflows to an existing repository
+
+If you are adding the CI to an existing repo that was **not** created from the template, clone `notebook-ci-actions` alongside it and copy the caller workflows in:
+
 ```bash
-# Clone the actions repository
+# Clone the actions repo next to your repository
 git clone https://github.com/spacetelescope/notebook-ci-actions.git
 
-# Navigate to your repository and run migration
-cd your-repository
-../notebook-ci-actions/scripts/migrate-to-unified.sh
-```
-
-### Manual Setup
-```bash
-# Create workflows directory
+# From your repository, copy the caller workflows in
 mkdir -p .github/workflows
-
-# Copy basic workflows
 cp ../notebook-ci-actions/examples/caller-workflows/notebook-pr.yml .github/workflows/
 cp ../notebook-ci-actions/examples/caller-workflows/notebook-merge.yml .github/workflows/
-
-# Optional: Add advanced workflows
+# Optional: scheduled + on-demand
 cp ../notebook-ci-actions/examples/caller-workflows/notebook-scheduled.yml .github/workflows/
 cp ../notebook-ci-actions/examples/caller-workflows/notebook-on-demand.yml .github/workflows/
 ```

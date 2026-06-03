@@ -626,7 +626,7 @@ echo "Success rate: $success_rate%"
 echo "Failed runs: $failed_count out of $total_count"
 ```
 
-## Migration Guide
+## Adopting custom runners
 
 ### Existing Workflows
 

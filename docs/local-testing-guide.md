@@ -169,7 +169,6 @@ act workflow_dispatch --eventpath .github/events/dispatch.json
 Create event JSON files:
 
 ```json
-# .github/events/pr.json
 {
   "pull_request": {
     "number": 1,

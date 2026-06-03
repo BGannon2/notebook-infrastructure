@@ -21,7 +21,7 @@ or edit the CI itself, you just need your notebooks to pass.
 
 ## :material-cog: I maintain a notebook repo
 
-You set up the caller workflows, choose which checks run, and manage migrations.
+You set up the caller workflows, choose which checks run, and manage configuration and updates.
 
 [Configuration Reference :material-arrow-right:](configuration-reference.md){ .md-button .md-button--primary }
 

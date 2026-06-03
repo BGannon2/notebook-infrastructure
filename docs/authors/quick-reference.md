@@ -18,6 +18,9 @@
 
 ## Test locally before you push
 
+!!! note "Where the test scripts live"
+    The local-testing helper scripts (`test-local-ci.sh`, `diagnose-local-ci.sh`) ship in [`notebook-ci-actions/scripts`](https://github.com/spacetelescope/notebook-ci-actions/tree/main/scripts), not in a repo created from the template. Clone `notebook-ci-actions` next to your repo and run them from there (e.g. `../notebook-ci-actions/scripts/test-local-ci.sh`), or copy the scripts in. The `./scripts/...` examples assume one of those.
+
 ```bash
 # Fastest useful check while editing (~1-2 min)
 EXECUTION_MODE=validation-only ./scripts/test-local-ci.sh

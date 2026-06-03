@@ -13,7 +13,7 @@ This document explains how to implement semantic versioning for reusable GitHub 
 - [Versioning Strategy for Actions](#versioning-strategy-for-actions)
 - [Automated Versioning Workflow](#automated-versioning-workflow)
 - [Using Versioned Workflows](#using-versioned-workflows)
-- [Migration Guide](#migration-guide)
+- [Upgrading between versions](#upgrading-between-versions)
 - [Best Practices](#best-practices)
 - [Troubleshooting](#troubleshooting)
 
@@ -284,7 +284,7 @@ uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.y
 uses: spacetelescope/notebook-ci-actions/.github/workflows/notebook-ci-unified.yml@v2.0.0-beta.1
 ```
 
-## :material-rocket-launch: Migration Guide
+## :material-rocket-launch: Upgrading between versions
 
 ### Upgrading from v1 to v2 (Breaking Changes)
 
@@ -468,7 +468,7 @@ jobs:
 ---
 
 
-For the latest version information, see the [Releases page](../../releases).
+For the latest version information, see the [Releases page](https://github.com/spacetelescope/notebook-ci-actions/releases).
 
 ## Pinning and rollback
 

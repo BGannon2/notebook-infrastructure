@@ -82,7 +82,7 @@ a scheduled failure points at the environment. Read it that way:
 
 ## When it goes red
 
-1. **Reproduce locally** with `./scripts/test-local-ci.sh` (or the on-demand
+1. **Reproduce locally** with `test-local-ci.sh` from your `notebook-ci-actions` clone (or the on-demand
    `execute-single` action) to confirm the failure and iterate on a fix.
 2. **Fix the drift** (pin a dependency, update a data location, refresh a secret).
 3. **Open a PR** with the fix; the PR run confirms the notebook passes again.
