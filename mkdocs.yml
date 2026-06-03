@@ -4,7 +4,7 @@ site_url: https://bgannon2.github.io/notebook-infrastructure/
 repo_url: https://github.com/spacetelescope/notebook-infrastructure
 repo_name: spacetelescope/notebook-infrastructure
 edit_uri: edit/main/docs/
-copyright: Copyright © 2022–2025 Space Telescope Science Institute
+copyright: Copyright © 2022–2026 Space Telescope Science Institute
 
 extra_css:
   - stylesheets/extra.css
