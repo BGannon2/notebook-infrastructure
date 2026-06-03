@@ -79,8 +79,6 @@ nav:
       - Migration Guide: migration-guide.md
       - Repository Migration Checklist: repository-migration-checklist.md
       - Semantic Versioning: semantic-versioning.md
-      - Action Reference (legacy): ci_actions.md
-      - Caller Workflows (legacy): ci_caller_workflows.md
   - Infrastructure:
       - Custom Runner Configuration: custom-runner-configuration.md
   - Troubleshooting: troubleshooting-unified.md
