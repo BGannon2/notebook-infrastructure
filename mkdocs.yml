@@ -1,0 +1,86 @@
+site_name: STScI Notebook Infrastructure
+site_description: Standards, CI/CD, and documentation for STScI's public Jupyter notebooks.
+site_url: https://bgannon2.github.io/notebook-infrastructure/
+repo_url: https://github.com/spacetelescope/notebook-infrastructure
+repo_name: spacetelescope/notebook-infrastructure
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: _static/stsci_pri_combo_mark_white_bkgd.png
+  favicon: _static/stsci_favicon.ico
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Overview: CI_Overview.md
+  - For Notebook Authors:
+      - Full Guide: authors/guide.md
+      - Quick Reference: authors/quick-reference.md
+      - Set Up a New Repo: authors/setup-repo.md
+      - Creating a Repo (Detailed): creating_a_repo.md
+      - Contributing Notebooks: contributing_notebooks.md
+      - On-Demand Runs: authors/on-demand-runs.md
+      - Local Testing (Cheatsheet): local-testing-quick-reference.md
+      - Local Testing (Full Guide): local-testing-guide.md
+      - Notebook Style: style.md
+      - Reviewing: reviewing.md
+  - For Maintainers:
+      - Operator Guide: operator-user-guide.md
+      - CI Walkthrough: ci_operators_guide.md
+      - CI Actions: ci_actions.md
+      - Caller Workflows: ci_caller_workflows.md
+      - Best Practices: ci_best_practices.md
+      - Configuration Reference: configuration-reference.md
+      - Setup Quick Reference: quick-reference.md
+      - Selective Execution: selective-execution.md
+      - Smart Workflows: smart-workflows.md
+      - Scheduled Weekly Runs: scheduled-runs.md
+      - Migration Guide: migration-guide.md
+      - Repository Migration Checklist: repository-migration-checklist.md
+      - Semantic Versioning: semantic-versioning.md
+  - Infrastructure:
+      - Custom Runner Configuration: custom-runner-configuration.md
+  - Troubleshooting: troubleshooting-unified.md
