@@ -68,7 +68,6 @@ The system automatically determines what to run based on file changes:
   - `*.md` files
   - `docs/` directory
   - `README` files
-  - `.github/workflows/` (workflow changes)
 
 - **Full CI path**: Triggered by changes to:
   - `*.ipynb` notebooks

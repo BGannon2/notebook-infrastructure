@@ -20,12 +20,12 @@ cd your-repository
 mkdir -p .github/workflows
 
 # Copy basic workflows
-cp examples/caller-workflows/notebook-pr.yml .github/workflows/
-cp examples/caller-workflows/notebook-merge.yml .github/workflows/
+cp ../notebook-ci-actions/examples/caller-workflows/notebook-pr.yml .github/workflows/
+cp ../notebook-ci-actions/examples/caller-workflows/notebook-merge.yml .github/workflows/
 
 # Optional: Add advanced workflows
-cp examples/caller-workflows/notebook-scheduled.yml .github/workflows/
-cp examples/caller-workflows/notebook-on-demand.yml .github/workflows/
+cp ../notebook-ci-actions/examples/caller-workflows/notebook-scheduled.yml .github/workflows/
+cp ../notebook-ci-actions/examples/caller-workflows/notebook-on-demand.yml .github/workflows/
 ```
 
 ## :material-cog: Configuration Templates

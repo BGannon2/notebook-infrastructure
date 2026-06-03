@@ -36,4 +36,4 @@ You manage the self-hosted runners and the underlying CI infrastructure.
 !!! note "About this site"
     This site is built from the markdown in the repository's `docs/` directory
     with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and
-    deployed to GitHub Pages on every push to `main`.
+    deployed to GitHub Pages when documentation changes are pushed to `main`.

@@ -1,6 +1,6 @@
 site_name: STScI Notebook Infrastructure
 site_description: Standards, CI/CD, and documentation for STScI's public Jupyter notebooks.
-site_url: https://bgannon2.github.io/notebook-infrastructure/
+site_url: https://spacetelescope.github.io/notebook-infrastructure/
 repo_url: https://github.com/spacetelescope/notebook-infrastructure
 repo_name: spacetelescope/notebook-infrastructure
 edit_uri: edit/main/docs/

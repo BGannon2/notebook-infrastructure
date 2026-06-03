@@ -378,7 +378,7 @@ When reporting issues, include:
 - **STScI staff:** [Submit a ticket to SPB](https://innerspace.stsci.edu/pages/viewpage.action?pageId=637400835&spaceKey=DDP&title=DMD%2BDev%2BPortal%2BHome)
 - **GitHub Issues**: [Create issue in notebook-ci-actions](https://github.com/spacetelescope/notebook-ci-actions/issues)
 - **Documentation**: Check `docs/` folder for detailed guides
-- **Migration Help**: Use `scripts/migrate-to-unified.sh` for automated setup
+- **Setup script**: run `scripts/migrate-to-unified.sh` from your `notebook-ci-actions` clone (see the [Setup Quick Reference](quick-reference.md))
 
 ### Emergency Contact
 
@@ -389,6 +389,5 @@ For critical production issues:
 
 ---
 
-**Last Updated**: July 2025  
 **System Version**: Unified workflow (`@v1`)  
 **Compatibility**: All STScI notebook repositories
